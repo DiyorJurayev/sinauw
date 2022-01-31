@@ -612,3 +612,88 @@ body {
 .apps{
   overflow: hidden;
 }
+.header__logo{
+  height: 35px;
+  width: 1px;
+}
+.logo__img{
+  margin: 14px;
+}
+.header__mob-btn{
+  z-index: 50;
+  position: relative;
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  align-self: flex-end;
+}
+.header__mob-btn:before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  top: -15px;
+  background-color: #000;
+  border-radius: 10px;
+}
+.header__mob-btn:after{
+  border-radius: 10px;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  bottom: -15px;
+  background-color: #000;
+}
+.mob__nav{
+  position: absolute;
+  flex-direction: column;
+  margin-top: 25px;
+  display: none;
+  left: 0;
+  background-color: aqua;
+  width: 100%;
+  align-items: center;
+}
+.mob__nav > a {
+  padding: 15px 20px;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  border: 2px solid var(--red);
+  margin: 8px 10px;
+}
+.header__mob{
+  display: none;
+}
+.header__mob-close-btn{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+}
+.show__close-btn{
+  visibility: visible;
+  opacity: 1;
+}
+.header__mob-close-btn:before{
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: black;
+  transform: rotate(45deg);
+}
+.header__mob-close-btn:after{
+  position: absolute;
+  content: '';
+  width: 4px;
+  height: 100%;
+  background-color: black;
+  transform: rotate(-45deg);
+}
+.header__links{
+  box-shadow: 6px 7px 9px 2px #f1f1f1;
+}
